@@ -29,12 +29,14 @@ func main() {
 	// Switch Tanpa Kondisi
 
 	switch {
-	case total > 80:
+	case total > 85:
 		fmt.Println("A")
-	case total < 80:
+	case total >= 75 && total < 80:
+		fmt.Println("B")
+	case total >= 75 && total < 80:
 		fmt.Println("B")
 	default:
-		fmt.Println("C")
+		fmt.Println("E")
 
 	}
 }
