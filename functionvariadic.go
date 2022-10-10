@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-func sumAll(number ...int) int{
+func sumAll(number ...int) int {
 	total := 0
-	
+
 	for _, value := range number {
 		total += value
 	}
@@ -13,7 +13,7 @@ func sumAll(number ...int) int{
 }
 
 func main() {
-	myNumber := [] int {10,2,10,20,12,2,0}
+	myNumber := []int{10, 2, 10, 20, 12, 2, 0}
 
 	total := sumAll(myNumber...)
 
